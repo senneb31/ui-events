@@ -26,10 +26,46 @@ interaction.addEventListener('animationend', jumpHandler)
 // Maak bijvoorbeeld een bibber animatie als je op iets klikt
 
 // Stap 1: querySelector
-// let bibberLink = document.querySelector...
-
 // Stap 2: addEventListener
-// bibberLink.addEventListener...
-
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-// bibberLink.classList.toggle...
+
+//Frontend
+let bewegenLR = document.querySelector('a:nth-of-type(1)')
+
+bewegenLR.addEventListener('click', beweging)
+
+function beweging(){
+  console.log('het werkt')
+
+  bewegenLR.classList.toggle('bewegen')
+}
+
+
+//&
+let vergroot = document.querySelector('a:nth-of-type(3)')
+
+vergroot.addEventListener('click', cirkel)
+
+function cirkel(){
+  console.log('het werkt')
+
+  vergroot.classList.toggle('vergroten')
+}
+
+
+
+
+//Flow
+let bibberLink = document.querySelector('a:nth-of-type(8)')
+
+bibberLink.addEventListener('click', bibberklik)
+
+
+function bibberklik() {
+  console.log('het werkt')
+
+  bibberLink.classList.toggle('bibberen')
+}
+
+
+
