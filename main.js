@@ -32,40 +32,88 @@ interaction.addEventListener('animationend', jumpHandler)
 //Frontend
 let bewegenLR = document.querySelector('a:nth-of-type(1)')
 
-bewegenLR.addEventListener('click', beweging)
+bewegenLR.addEventListener('click', Frontend)
 
-function beweging(){
+function Frontend(){
   console.log('het werkt')
 
   bewegenLR.classList.toggle('bewegen')
 }
 
 
+//Design
+let bewegenLinks = document.querySelector('a:nth-of-type(2)')
+
+bewegenLinks.addEventListener('click', Design)
+
+function Design(){
+  console.log('het werkt')
+  
+  bewegenLinks.classList.toggle('bewegenRL')
+}
+
+
+
 //&
 let vergroot = document.querySelector('a:nth-of-type(3)')
 
-vergroot.addEventListener('click', cirkel)
+vergroot.addEventListener('click', And)
 
-function cirkel(){
+function And(){
   console.log('het werkt')
 
   vergroot.classList.toggle('vergroten')
 }
 
 
+//Development
+let omhoog = document.querySelector('a:nth-of-type(4)')
 
+omhoog.addEventListener('click', Development)
+
+function Development(){
+  console.log('het werkt')
+
+  omhoog.classList.toggle('springen')
+}
+
+//Sprint 5
+let omlaag = document.querySelector('a:nth-of-type(5)')
+
+omlaag.addEventListener('click', Sprint5)
+
+function Sprint5(){
+  console.log('het werkt')
+
+  omlaag.classList.toggle('bukken')
+}
+
+//Fix
+//The
 
 //Flow
 let bibberLink = document.querySelector('a:nth-of-type(8)')
 
-bibberLink.addEventListener('click', bibberklik)
+bibberLink.addEventListener('click', Flow)
 
 
-function bibberklik() {
+function Flow() {
   console.log('het werkt')
 
   bibberLink.classList.toggle('bibberen')
 }
+
+//User
+//Interface
+//Events
+//User Flow
+//Wireflow
+//Feedback
+//Feedforward
+//Labels
+//States
+//Navigation
+//Code
 
 
 
