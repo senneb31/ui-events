@@ -90,16 +90,16 @@ a:nth-of-type(12) {
   animation-iteration-count: 1;
 }
 
-@keyframes beweging-L-R{
-  0%{
-    transform: translateX(0);
-  }
-  50%{
-    transform: translateX(1em);
-  }
-  100%{
-    transform: translateX(0);
-  }
+  @keyframes beweging-L-R{
+    0%{
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(1em);
+    }
+    100%{
+      transform: translateX(0);
+    }
 }
 
 /*Design*/
@@ -113,16 +113,16 @@ a:nth-of-type(12) {
   animation-iteration-count: 1;
 }
 
-@keyframes bewegingRL{
-  0%{
-    transform: translateX(0);
-  }
-  50%{
-    transform: translateX(-1em);
-  }
-  100%{
-    transform: translateX(0);
-  }
+  @keyframes bewegingRL{
+    0%{
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(-1em);
+    }
+    100%{
+      transform: translateX(0);
+    }
 }
 
 /*And*/
@@ -132,19 +132,19 @@ a:nth-of-type(12) {
   color: var(--secondary);
   border-color: var(--secondary);
   animation-name: cirkel-vergroten;
-  animation-duration: 2s;
+  animation-duration: .8s;
 }
 
-@keyframes cirkel-vergroten{
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.2);
-  }
-  100%{
-    transform: scale(1);
-  }
+  @keyframes cirkel-vergroten{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    }
 }
 
 /*Development*/
@@ -158,17 +158,18 @@ a:nth-of-type(12) {
   animation-iteration-count: 1;
 }
 
-@keyframes springen{
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(-2em);
-  }
-  100%{
-    transform: translateY(0);
+  @keyframes springen{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-2em);
+    }
+    100%{
+      transform: translateY(0);
   }
 }
+
 /*Sprint 5*/
 .bukken{
   position: relative;
@@ -180,19 +181,99 @@ a:nth-of-type(12) {
   animation-iteration-count: 1;
 }
 
-@keyframes bukken{
+  @keyframes bukken{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(2em);
+    }
+    100%{
+      transform: translateY(0);
+    }
+}
+
+/*Fix*/
+.linksdraaien{
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary); 
+  animation-name: linksdraaien;
+  animation-duration: 350ms;
+  animation-iteration-count: 5;
+}
+
+@keyframes linksdraaien{
   0%{
-    transform: translateY(0);
+    transform: rotate(0deg);
+  }
+  12.5%{
+    transform: rotate(-45deg);
+  }
+  25%{
+    transform: rotate(-90deg);
+  }
+  37.5%{
+    transform: rotate(-135deg);
   }
   50%{
-    transform: translateY(2em);
+    transform: rotate(-180deg);
+  }
+  62.5%{
+    transform: rotate(-225deg);
+  }
+  75%{
+    transform: rotate(-270deg);
+  }
+  82.5%{
+    transform: rotate(-315deg);
   }
   100%{
-    transform: translateY(0);
+    transform: rotate(-360deg);
   }
 }
-/*Fix*/
+
 /*The*/
+.rechtsomdraai{
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);  
+  animation-name: rechtsdraai;
+  animation-duration: 350ms;
+  animation-iteration-count: 5;
+}
+
+  @keyframes rechtsdraai{
+    0%{
+      transform: rotate(0deg);
+    }
+    12.5%{
+      transform: rotate(45deg);
+    }
+    25%{
+      transform: rotate(90deg);
+    }
+    37.5%{
+      transform: rotate(135deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    62.5%{
+      transform: rotate(225deg);
+    }
+    75%{
+      transform: rotate(270deg);
+    }
+    82.5%{
+      transform: rotate(315deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
 
 /*Flow*/
 .bibberen{
@@ -205,23 +286,64 @@ a:nth-of-type(12) {
   animation-iteration-count: 20;
 }
 
-@keyframes bibber-animatie {
-  0%{
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(.2em);
-  }
-  100%{
-    transform: translateY(0);
-  }
+  @keyframes bibber-animatie {
+    0%{
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(.2em);
+    }
+    100%{
+      transform: translateY(0);
+    }
 
 }
 
 /*User*/
 /*Interface*/
 /*Events*/
+.bibberverticaal{
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  animation-name: bibber-verticaal;
+  animation-duration: 50ms;
+  animation-iteration-count: 20;
+}
+
+  @keyframes bibber-verticaal{
+    0%{
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(.2em);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
 /*User Flow*/
+.verkleinen{
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  animation-name: verkleinen;
+  animation-duration: .8s;
+}
+
+  @keyframes verkleinen{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(.7);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
 /*Wireflow*/
 /*Feedback*/
 /*Feedforward*/

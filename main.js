@@ -89,7 +89,26 @@ function Sprint5(){
 }
 
 //Fix
+let linksdraai = document.querySelector('a:nth-of-type(6)')
+
+linksdraai.addEventListener('click', Fix)
+
+function Fix(){
+  console.log('het werkt')
+
+  linksdraai.classList.toggle('linksdraaien')
+}
+
 //The
+let rechtsom = document.querySelector('a:nth-of-type(7)')
+
+rechtsom.addEventListener('click', The)
+
+function The(){
+  console.log('het werkt')
+
+  rechtsom.classList.toggle('rechtsomdraai')
+}
 
 //Flow
 let bibberLink = document.querySelector('a:nth-of-type(8)')
@@ -106,7 +125,25 @@ function Flow() {
 //User
 //Interface
 //Events
+let bibber = document.querySelector('a:nth-of-type(11)')
+
+bibber.addEventListener('click', Events)
+
+function Events(){
+  console.log('het werkt')
+
+  bibber.classList.toggle('bibberverticaal')
+}
 //User Flow
+let verklein = document.querySelector('a:nth-of-type(13)')
+
+verklein.addEventListener('click', UserFlow)
+
+function UserFlow() {
+  console.log('het werkt')
+
+  verklein.classList.toggle('verkleinen')
+}
 //Wireflow
 //Feedback
 //Feedforward
